@@ -353,8 +353,8 @@
 \def\headName{}
 \def\@pubid{}
 \def\markboth#1#2{\def\leftmark{#1}\def\rightmark{#2}}
-\def\thevol{4}
-\def\theyear{2016}
+\def\thevol{1}
+\def\theyear{2020}
 \def\vol#1{\gdef\thevol{#1}}
 \def\year#1{\gdef\theyear{#1}}
 \def\pubid#1{\gdef\@pubid{#1}}
@@ -397,20 +397,20 @@
      }}
   }
 \else
-  \def\headerlogo{\raisebox{-2pt}{\includegraphics[width=7.61pc]{Logo.png}}}
-  \def\headerlogoall{\raisebox{-2pt}{\includegraphics[width=7.61pc]{notaglineLogo.png}}}
+  \def\headerlogo{\raisebox{-2pt}{\includegraphics[width=7.61pc]{figures/logo.png}}}
+  \def\headerlogoall{\raisebox{-2pt}{\includegraphics[width=7.61pc]{figures/notaglinelogo.png}}}
   \def\ps@titlepage{%
     \def\@oddhead{\parbox[t]{\textwidth}{\mbox{}\\[-6.3mm]\mbox{}\nheaderfont\color{accessblue}\headName\hfill\headerlogo{\raisebox{-2pt}{\,}}\color{black}\vspace*{-1.5mm}\par\hrulefill}}
     \def\@evenhead{\parbox[t]{\textwidth}{\mbox{}\\[-6.3mm]\mbox{}\headerlogo\hfill\nheaderfont\color{accessblue}\headName{\raisebox{-2pt}{\,}}\color{black}\vspace*{-1.5mm}\par\hrulefill}}
      \def\@oddfoot{\raisebox{3pt}{%%
-       \hbox to 0pc{\hbox to \textwidth{{\footervolfont VOLUME\ \thevol, 2016}\hfill\mbox{}}}%
+       \hbox to 0pc{\hbox to \textwidth{{\footervolfont VOLUME\ \thevol, 2020}\hfill\mbox{}}}%
        \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont\@pubid}\hfill\mbox{}}}%
        \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footerpagefont\thepage}}}%\hspace*{1.8pc}
        }}
      \def\@evenfoot{\raisebox{3pt}{%
        \hbox to 0pc{\hbox to \textwidth{{\footerpagefont\thepage}\hfill}\mbox{}}\hspace*{1.8pc}%\hspace*{1.8pc}
        \hspace*{-1.8pc}\hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont\@pubid}\hfill\mbox{}}}%
-       \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont VOLUME\ \thevol, 2016}}}\hspace*{1.8pc}% [updated here]
+       \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont VOLUME\ \thevol, 2020}}}\hspace*{1.8pc}% [updated here]
      }}
   }
 % normal page
@@ -418,12 +418,12 @@
      \def\@oddhead{\parbox[t]{\textwidth}{\mbox{}\\[-6.3mm]{\raisebox{-2pt}{\headerfont\rightmark}}\hfill\headerlogoall\mbox{}\vspace*{-1.5mm}\par\hrulefill}}
      \def\@evenhead{\parbox[t]{\textwidth}{\mbox{}\\[-6.3mm]\mbox{}\headerlogoall\hfill{\raisebox{-2pt}{\headerfont\leftmark}}\vspace*{-1.5mm}\par\hrulefill}}
      \def\@oddfoot{\raisebox{8pt}{%
-       \hbox to 0pc{\hbox to \textwidth{{\footervolfont VOLUME\ \thevol, 2016}\hfill\mbox{}}}%
+       \hbox to 0pc{\hbox to \textwidth{{\footervolfont VOLUME\ \thevol, 2020}\hfill\mbox{}}}%
        \hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footerpagefont\thepage}}}%\hspace*{1.8pc}
        }}
      \def\@evenfoot{\raisebox{8pt}{%
        \hbox to 0pc{\hbox to \textwidth{{\footerpagefont\thepage}\mbox{}\hfill}}\hspace*{1.8pc}%\hspace*{-1.8pc}
-       \hspace*{-1.8pc}\hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont VOLUME\ \thevol, 2016}}}\hspace*{1.8pc}% [updated here]
+       \hspace*{-1.8pc}\hbox to 0pc{\hbox to \textwidth{\mbox{}\hfill{\footervolfont VOLUME\ \thevol, 2020}}}\hspace*{1.8pc}% [updated here]
      }}
   }
 \fi
@@ -462,7 +462,7 @@
 \newdimen\absht
 \renewenvironment{abstract}
      {\global\setbox99=\hbox\bgroup\noindent%
-      \ifjtehm\else\raisebox{-.8pc}{\includegraphics[width=0.5em]{bullet.png}}\hspace*{1.5mm}\fi%
+      \ifjtehm\else\raisebox{-.8pc}{\includegraphics[width=0.5em]{figures/bullet.png}}\hspace*{1.5mm}\fi%
       \begin{minipage}[t]{\abstractwidth}%
       \abstracttitle\bodyfont%
      }
@@ -476,7 +476,7 @@
 \ifdefined\IEEEkeywords\else\newenvironment{IEEEkeywords}{}{}\fi
 \renewenvironment{keywords}
      {\global\setbox88=\hbox\bgroup\noindent%
-      \ifjtehm\else\raisebox{-.8pc}{\includegraphics[width=0.5em]{bullet.png}}\hspace*{1.5mm}\fi%
+      \ifjtehm\else\raisebox{-.8pc}{\includegraphics[width=0.5em]{figures/bullet.png}}\hspace*{1.5mm}\fi%
       \begin{minipage}[t]{\abstractwidth}%
       \indextitle\bodyfont%
      }
@@ -486,7 +486,7 @@
      }
 \renewenvironment{IEEEkeywords}
      {\global\setbox88=\hbox\bgroup\noindent%
-      \ifjtehm\else\raisebox{-.8pc}{\includegraphics[width=0.5em]{bullet.png}}\hspace*{1.5mm}\fi%
+      \ifjtehm\else\raisebox{-.8pc}{\includegraphics[width=0.5em]{figures/bullet.png}}\hspace*{1.5mm}\fi%
       \begin{minipage}[t]{\abstractwidth}%
       \indextitle\bodyfont%
      }
@@ -836,7 +836,7 @@
 \parskip=0pt\par%
 \noindent{\biographyheadfont\uppercase{#1}\ }\@IEEEgobbleleadPARNLSP}{\relax\par\normalfont}
 
-\def\EOD{\ifaccesseditors\else\mbox{}\newline\hspace*{\fill}\mbox{\rotatebox{90}{\includegraphics[width=0.5em]{bullet.png}}}\fi\global\eoddefinedtrue}
+\def\EOD{\ifaccesseditors\else\mbox{}\newline\hspace*{\fill}\mbox{\rotatebox{90}{\includegraphics[width=0.5em]{figures/bullet.png}}}\fi\global\eoddefinedtrue}
 
 \ifaccesseditors
 \def\bioaddressfont{\sffamily\putfont{T1}{formata}{n}{n}{8}{10}}
